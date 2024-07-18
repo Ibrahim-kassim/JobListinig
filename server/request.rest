@@ -1,0 +1,29 @@
+### Create a Job Listing
+POST http://localhost:3001/api/jobs
+Content-Type: application/json
+
+{
+  "title": "Backend Developer",
+  "description": "Responsible for server-side web application logic and integration of the work front-end developers do.",
+  "skills": ["Node.js", "Express", "MongoDB"],
+  "attachments" :["ibrahimkassimcv3"]
+}
+
+### Get All Job Listings
+GET http://localhost:3001/api/jobs
+
+### Get a Job Listing by ID
+GET http://localhost:3001/api/jobs/669820b8b84ca9a1d6f34bed
+
+### Update a Job Listing
+PUT http://localhost:3001/api/jobs/669820b8b84ca9a1d6f34bed
+Content-Type: application/json
+
+{
+  "title": "Backend Developer Updated",
+  "description": "Updated description",
+  "skills": ["Node.js", "Express", "MongoDB", "Docker"]
+}
+
+### Delete a Job Listing
+DELETE http://localhost:3001/api/jobs/669820b8b84ca9a1d6f34bed
